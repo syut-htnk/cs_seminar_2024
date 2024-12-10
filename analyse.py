@@ -14,6 +14,7 @@ plt.show()
 
 # Plot other X-Y pairs
 # Plot each X-Y pair with colors based on 'Recording Timestamp'
+# If the Y column exists, plot the X-Y pair
 for x_col in [col for col in data.columns if 'X' in col]:
     y_col = x_col.replace('X', 'Y')
     if y_col in data.columns:
